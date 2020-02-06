@@ -11,7 +11,7 @@ Welcome!
 - [Additional Results for the Main Paper](#additional-results-for-the-main-paper)
   - [Histogram of Uncertainties by Dropout Ratios](#histogram-of-uncertainties-by-dropout-ratios)
   - [Uncertainty Curves by Dropout Ratios](#uncertainty-curves-by-dropout-ratios)
-  - [Uncertainty comparison: 5-class vs 381-class](#Uncertainty-comparison:-5-class-vs-381-class)
+  - [Uncertainty comparison 5-class vs 381-class](#Uncertainty-comparison-5-class-vs-381-class)
 
 - [Demo](#demo)
   - [Vanilla, no framework](#vanilla-no-framework)
