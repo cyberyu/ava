@@ -9,7 +9,7 @@ A lightweight and fast control to render a select component that can display hie
 ## Table of Contents
 
 - [Additional Results for the Main Paper](#additional-results-for-the-main-paper)
-  - [Distributions of Standard Deviations of Questions obtained from differnt Dropout Ratios](#distributions-of-standard- deviations-of-questions-obtained-from-differnt-dropout-ratios)
+  - [Histogram of Uncertainties by Dropout Ratios](#histogram-of-uncertainties-by-dropout-ratios)
 - [Demo](#demo)
   - [Vanilla, no framework](#vanilla-no-framework)
   - [With Bootstrap](#with-bootstrap)
@@ -63,7 +63,7 @@ A lightweight and fast control to render a select component that can display hie
 
 ## Additional Results for the Main Paper
 
-### Distributions of Standard Deviations of Questions obtained from differnt Dropout Ratios
+##### Histogram of Uncertainties by Dropout Ratios
 ![alt-text-1](images/original/dropout_10percent_10iterations.png "title-1") ![alt-text-2](images/original/dropout_10percent_30iterations.png "title-2")
 
 ## Demo
