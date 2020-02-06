@@ -10,6 +10,9 @@ Welcome!
 
 - [Additional Results for the Main Paper](#additional-results-for-the-main-paper)
   - [Histogram of Uncertainties by Dropout Ratios](#histogram-of-uncertainties-by-dropout-ratios)
+  - [Uncertainty Curves by Dropout Ratios](#uncertainty-curves-by-dropout-ratios)
+  - [Uncertainty comparison 5-class vs 381-class](#Uncertainty-comparison-5-class-vs-381-class)
+
 - [Demo](#demo)
   - [Vanilla, no framework](#vanilla-no-framework)
   - [With Bootstrap](#with-bootstrap)
@@ -74,7 +77,10 @@ Welcome!
 <img src="images/original/dropout_80percent_10iterations.png" width="350"/> <img src="images/original/dropout_80percent_30iterations.png" width="350"  />
 <img src="images/original/dropout_90percent_10iterations.png" width="350"/> <img src="images/original/dropout_90percent_30iterations.png" width="350"  />
 
-## Demo
+##### Uncertainty Curves by Dropout Ratios
+<img src="images/original/acc_dropout_10epoch.png" width="350"/> <img src="images/original/acc_dropout_30epoch.png" width="350"  />
+
+
 
 ##### Vanilla, no framework
 
