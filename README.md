@@ -1,25 +1,6 @@
 # AVA: A Financial Service Chatbot based on Deep BidirectionalTransformer
 ---
 
-[![NPM version][npm-image]][npm-url] [![gzip][gzip-image]][gzip-url] [![npm download][download-image]][npm-url]
-
-[![build status][travis-image]][travis-url] [![Test coverage][coveralls-image]][coveralls-url] [![Commitizen friendly][commitizen]][commitizen-url] [![semantic-release][semantic-release]][semantic-release-url] [![All Contributors][all-contributors-url]](#contributors) ![npm type definitions][types-url]
-
-[npm-image]: http://img.shields.io/npm/v/react-dropdown-tree-select.svg?style=flat-square
-[npm-url]: http://npmjs.org/package/react-dropdown-tree-select
-[travis-image]: https://img.shields.io/travis/dowjones/react-dropdown-tree-select.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dowjones/react-dropdown-tree-select
-[coveralls-image]: https://img.shields.io/coveralls/dowjones/react-dropdown-tree-select.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/dowjones/react-dropdown-tree-select?branch=master
-[download-image]: https://img.shields.io/npm/dt/react-dropdown-tree-select.svg?style=flat-square
-[commitizen]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square
-[commitizen-url]: http://commitizen.github.io/cz-cli/
-[gzip-image]: http://img.badgesize.io/https://unpkg.com/react-dropdown-tree-select/dist/react-dropdown-tree-select.js?compression=gzip&style=flat-square
-[gzip-url]: https://unpkg.com/react-dropdown-tree-select/dist/react-dropdown-tree-select.js
-[semantic-release]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square
-[semantic-release-url]: https://github.com/semantic-release/semantic-release
-[all-contributors-url]: https://img.shields.io/badge/all_contributors-26-orange.svg?style=flat-square
-[types-url]: https://img.shields.io/npm/types/react-dropdown-tree-select.svg?style=flat-square
 
 ## AVA: 
 
