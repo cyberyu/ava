@@ -11,6 +11,7 @@ Welcome!
 - [Additional Results for the Main Paper](#additional-results-for-the-main-paper)
   - [Histogram of Uncertainties by Dropout Ratios](#histogram-of-uncertainties-by-dropout-ratios)
   - [Uncertainty Curves by Dropout Ratios](#uncertainty-curves-by-dropout-ratios)
+  - [Grid Search for Optimal Threshold on Dropout](#grid-search-for-optimal-threshold-on-dropout)  
   - [Uncertainty comparison 5-class vs 381-class](#Uncertainty-comparison-5-class-vs-381-class)
 
 - [Demo](#demo)
@@ -80,7 +81,8 @@ Welcome!
 ##### Uncertainty Curves by Dropout Ratios
 <img src="images/original/acc_dropout_10epoch.png" width="350"/> <img src="images/original/acc_dropout_30epoch.png" width="350"  />
 
-
+##### Grid Search For Optimal Threshold on Dropout
+<img src="images/original/bfsearch.png" width="550"/>
 
 ##### Vanilla, no framework
 
