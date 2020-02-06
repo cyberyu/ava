@@ -8,7 +8,7 @@ A lightweight and fast control to render a select component that can display hie
 
 ## Table of Contents
 
-- [Screenshot](#screenshot)
+- [Additional Results for the Main Paper](#addition-results)
 - [Demo](#demo)
   - [Vanilla, no framework](#vanilla-no-framework)
   - [With Bootstrap](#with-bootstrap)
@@ -60,7 +60,7 @@ A lightweight and fast control to render a select component that can display hie
 - [License](#license)
 - [Contributors](#contributors)
 
-## Screenshot
+## Additional Results for the Main Paper
 
 ![animated demo screenshot](https://user-images.githubusercontent.com/781818/37562235-0ae9e9ec-2a3a-11e8-8266-b0e6b716d0d1.gif)
 
