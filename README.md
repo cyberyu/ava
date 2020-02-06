@@ -64,7 +64,7 @@ A lightweight and fast control to render a select component that can display hie
 ## Additional Results for the Main Paper
 
 ##### Histogram of Uncertainties by Dropout Ratios
-![alt-text-1](images/original/dropout_10percent_10iterations.png "title-1") ![alt-text-2](images/original/dropout_10percent_30iterations.png "title-2")
+![alt-text-1](images/original/dropout_10percent_10iterations.png "title-1"| width=100) ![alt-text-2](images/original/dropout_10percent_30iterations.png "title-2"| width=100)
 
 ## Demo
 
