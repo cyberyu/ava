@@ -1,4 +1,4 @@
-# AVA: A Financial Service Chatbot based on Deep BidirectionalTransformer
+# AVA
 ---
 
 
