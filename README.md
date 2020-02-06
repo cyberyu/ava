@@ -8,8 +8,8 @@ A lightweight and fast control to render a select component that can display hie
 
 ## Table of Contents
 
-- [Additional Results for the Main Paper](#addition-results)
-- [Demo](#demoa)
+- [Additional Results for the Main Paper](#addition-results-for-the-main-paper)
+- [Demo](#demo)
   - [Vanilla, no framework](#vanilla-no-framework)
   - [With Bootstrap](#with-bootstrap)
   - [With Material Design](#with-material-design)
