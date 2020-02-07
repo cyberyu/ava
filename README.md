@@ -12,6 +12,7 @@ Welcome!
   - [Histogram of Uncertainties by Dropout Ratios](#histogram-of-uncertainties-by-dropout-ratios)
   - [Uncertainty Curves by Dropout Ratios](#uncertainty-curves-by-dropout-ratios)
   - [Grid Search for Optimal Threshold on Dropout](#grid-search-for-optimal-threshold-on-dropout)  
+  - [Optimal Threshold Learning on Dropout 381 classes](#optimal-threshold-learning-on-dropout-381-classes)  
   - [Uncertainty comparison 5-class vs 381-class](#Uncertainty-comparison-5-class-vs-381-class)
 
 - [Demo](#demo)
