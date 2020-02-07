@@ -85,6 +85,11 @@ Welcome!
 ##### Grid Search For Optimal Threshold on Dropout
 <img src="images/original/bfsearch.png" width="550"/>
 
+#### Optimal threshold learning on dropout 381 classes
+
+We did more experiments using different \delta values to optimizing the thresholds from Dropout, and results can be found here.
+
+
 ##### Vanilla, no framework
 
 Online demo: https://dowjones.github.io/react-dropdown-tree-select/#/story/with-vanilla-styles
