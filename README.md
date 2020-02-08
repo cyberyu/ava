@@ -85,10 +85,12 @@ Welcome!
 ##### Grid Search For Optimal Threshold on Dropout
 <img src="images/original/bfsearch.png" width="550"/>
 
-#### Optimal threshold learning on dropout 381 classes
+##### Optimal threshold learning on dropout 381 classes
 
 We did more experiments using different \delta values to optimizing the thresholds from Dropout, and results can be found here.
 
+##### Uncertainty comparison 5-class vs 381-class
+<img src="images/original/acc_dropout_10epoch_5class.png" width="350"/> <img src="images/original/acc_dropout_30epoch_5class.png" width="350"  />
 
 ##### Vanilla, no framework
 
