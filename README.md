@@ -55,4 +55,4 @@ We did more experiments using different \delta values to optimizing the threshol
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
-Released 2017 by [Hrusikesh Panda](https://github.com/mrchief) @ [Dow Jones](https://github.com/dowjones)
+Released 2020 by [Shi Yu](https://github.com/cyberyu) 
