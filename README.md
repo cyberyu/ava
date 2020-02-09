@@ -37,8 +37,9 @@ Welcome!
 <img src="images/original/dropout_90percent_10iterations.png" width="350"/> <img src="images/original/dropout_90percent_30iterations.png" width="350"  />
 
 ##### Uncertainty Curves by Dropout Ratios 5-class vs 381-class
-<img src="images/original/acc_dropout_10epoch.png" width="250"/>  <img src="images/original/acc_dropout_30epoch.png" width="250"  />
-<img src="images/original/acc_dropout_10epoch_5class.png" width="250"/> <img src="images/original/acc_dropout_30epoch_5class.png" width="250" /> <img src="images/original/epoch_compare_5class.png" width="250" />
+<img src="images/original/acc_dropout_10epoch.png" width="250"/>  <img src="images/original/acc_dropout_30epoch.png" width="250" /> <br/><img src="images/original/acc_dropout_10epoch_5class.png" width="250"/>  <br/>
+
+<img src="images/original/acc_dropout_30epoch_5class.png" width="250" /> <img src="images/original/epoch_compare_5class.png" width="250" />
 
 ##### Grid Search For Optimal Threshold on Dropout
 <img src="images/original/bfsearch.png" width="550"/>
