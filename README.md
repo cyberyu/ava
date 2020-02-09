@@ -42,7 +42,7 @@ Welcome!
 <img src="images/original/acc_dropout_30epoch_5class.png" width="250" /> <img src="images/original/epoch_compare_5class.png" width="250" />
 
 ##### Grid Search For Optimal Threshold on Dropout
-<img src="images/original/bfsearch.png" width="550"/>
+<img src="images/original/bfsearch.png" width="350"/>  <img src="images/original/bfsearch_5class.png" width="350"/>
 
 ##### Optimal threshold learning on dropout 381 classes
 
