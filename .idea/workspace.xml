@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bba81da-3995-4359-94fe-f38458471e86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts/optimization/entropy_threshold.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/notebooks/.ipynb_checkpoints/BERT_dropout_visualization-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/notebooks/.ipynb_checkpoints/BERT_dropout_visualization-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/notebooks/BERT_dropout_visualization.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/notebooks/BERT_dropout_visualization.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/optimization/entropy_threshold.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,13 +21,13 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ipynb" value="5" />
-          <entry key="py" value="1" />
+          <entry key="py" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IPNB" value="5" />
-          <entry key="Python" value="1" />
+          <entry key="Python" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -46,18 +44,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/notebooks/inmemory_intent.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="0" />
-            </state>
-          </provider>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/optimization/optimize_dropout_thresholds.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/optimization/entropy_threshold.py">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/optimization/optimize_entropy_threshold.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -102,6 +102,12 @@
               <item name="ava" type="b2602c69:ProjectViewProjectNode" />
               <item name="ava" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ava" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="optimization" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -180,6 +186,9 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/optimization/entropy_threshold.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/notebooks/inmemory_intent.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -187,7 +196,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/optimization/entropy_threshold.py">
+    <entry file="file://$PROJECT_DIR$/scripts/optimization/optimize_entropy_threshold.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/optimization/optimize_dropout_thresholds.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
