@@ -40,7 +40,7 @@ We list out two columns, nine rows of histograms visualizing difference of three
 
 ##### Uncertainty and Accuracy Curves by Dropout Ratios 5-class vs 381-class
 
-Uncertainty and Accuracy curves obtained on 381-class model.
+Uncertainty and Accuracy curves obtained on 381-class model. <br/>
 <img src="images/original/acc_dropout_10epoch.png" width="250"/>  <img src="images/original/acc_dropout_30epoch.png" width="250" />  <img src="images/original/epoch_compare.png" width="250" />
 <br/>
 
