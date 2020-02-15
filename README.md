@@ -49,6 +49,7 @@ Uncertainty and Accuracy curves obtained on 5-class model.
 <img src="images/original/acc_dropout_10epoch_5class.png" width="250"/><img src="images/original/acc_dropout_30epoch_5class.png" width="250"/><img src="images/original/epoch_compare_5class.png" width="250" />
 
 ##### Grid Search For Optimal Threshold on Dropout
+Left side is grid search for 381-class problem.  Right side is grid search for 5-class problem.
 <img src="images/original/bfsearch.png" width="350"/>  <img src="images/original/bfsearch_5class.png" width="350"/>
 
 ##### Optimal threshold learning on dropout 381 classes
