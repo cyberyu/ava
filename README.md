@@ -10,7 +10,7 @@ Welcome!
 
 - [Additional Results for the Main Paper](#additional-results-for-the-main-paper)
   - [Histogram of Uncertainties by Dropout Ratios](#histogram-of-uncertainties-by-dropout-ratios)
-  - [Uncertainty Curves by Dropout Ratios 5-class vs 381-class](#uncertainty-curves-by-dropout-ratios-5-class-vs-381-class)
+  - [Uncertainty and Accuracy Curves by Dropout Ratios 5-class vs 381-class](#uncertainty-and-accuracy-curves-by-dropout-ratios-5-class-vs-381-class)
   - [Grid Search for Optimal Threshold on Dropout](#grid-search-for-optimal-threshold-on-dropout)  
   - [Optimal Threshold Learning on Dropout 381 classes](#optimal-threshold-learning-on-dropout-381-classes)  
 
@@ -26,6 +26,8 @@ Welcome!
 ## Additional Results for the Main Paper
 
 ##### Histogram of Uncertainties by Dropout Ratios
+We list out two columns, nine rows of histograms visualizing difference of three distributions (training, test, irrelevant questions).  The left column shows models trained for 10 epochs and the right are models trained for 30 epochs. From 1st row to 9th row we show distributions obtained from dropout at 10, 20, 30, ..., 90 percent.  
+
 <img src="images/original/dropout_10percent_10iterations.png" width="350"/> <img src="images/original/dropout_10percent_30iterations.png" width="350"  />
 <img src="images/original/dropout_20percent_10iterations.png" width="350"/> <img src="images/original/dropout_20percent_30iterations.png" width="350"  />
 <img src="images/original/dropout_30percent_10iterations.png" width="350"/> <img src="images/original/dropout_30percent_30iterations.png" width="350"  />
@@ -36,12 +38,18 @@ Welcome!
 <img src="images/original/dropout_80percent_10iterations.png" width="350"/> <img src="images/original/dropout_80percent_30iterations.png" width="350"  />
 <img src="images/original/dropout_90percent_10iterations.png" width="350"/> <img src="images/original/dropout_90percent_30iterations.png" width="350"  />
 
-##### Uncertainty Curves by Dropout Ratios 5-class vs 381-class
-<img src="images/original/acc_dropout_10epoch.png" width="250"/>  <img src="images/original/acc_dropout_30epoch.png" width="250" /><img src="images/original/acc_dropout_10epoch_5class.png" width="250"/>  <br/>
+##### Uncertainty and Accuracy Curves by Dropout Ratios 5-class vs 381-class
 
-<img src="images/original/acc_dropout_30epoch_5class.png" width="250" /> <img src="images/original/epoch_compare_5class.png" width="250" />
+Uncertainty and Accuracy curves obtained on 381-class model. <br/>
+<img src="images/original/acc_dropout_10epoch.png" width="250"/>  <img src="images/original/acc_dropout_30epoch.png" width="250" />  <img src="images/original/epoch_compare.png" width="250" />
+<br/>
+
+Uncertainty and Accuracy curves obtained on 5-class model.
+<br/>
+<img src="images/original/acc_dropout_10epoch_5class.png" width="250"/><img src="images/original/acc_dropout_30epoch_5class.png" width="250"/><img src="images/original/epoch_compare_5class.png" width="250" />
 
 ##### Grid Search For Optimal Threshold on Dropout
+Left side is grid search for 381-class problem.  Right side is grid search for 5-class problem.
 <img src="images/original/bfsearch.png" width="350"/>  <img src="images/original/bfsearch_5class.png" width="350"/>
 
 ##### Optimal threshold learning on dropout 381 classes
