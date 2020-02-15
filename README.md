@@ -39,13 +39,14 @@ We list out two columns, nine rows of histograms visualizing difference of three
 <img src="images/original/dropout_90percent_10iterations.png" width="350"/> <img src="images/original/dropout_90percent_30iterations.png" width="350"  />
 
 ##### Uncertainty and Accuracy Curves by Dropout Ratios 5-class vs 381-class
-Uncertainty and Accuracy curves obtained on 381-class model.
 
+Uncertainty and Accuracy curves obtained on 381-class model.
 <img src="images/original/acc_dropout_10epoch.png" width="250"/>  <img src="images/original/acc_dropout_30epoch.png" width="250" />  <img src="images/original/epoch_compare.png" width="250" />
 <br/>
 
 Uncertainty and Accuracy curves obtained on 5-class model.
-<img src="images/original/acc_dropout_10epoch_5class.png" width="250"/>  <img src="images/original/acc_dropout_30epoch_5class.png" width="250" /> <img src="images/original/epoch_compare_5class.png" width="250" />
+<br/>
+<img src="images/original/acc_dropout_10epoch_5class.png" width="250"/><img src="images/original/acc_dropout_30epoch_5class.png" width="250"/><img src="images/original/epoch_compare_5class.png" width="250" />
 
 ##### Grid Search For Optimal Threshold on Dropout
 <img src="images/original/bfsearch.png" width="350"/>  <img src="images/original/bfsearch_5class.png" width="350"/>
