@@ -58,7 +58,7 @@ We did more experiments using different \delta values to optimizing the threshol
 
 ##### Uncertainty comparison 5-class vs 381-class
 
-
+<img src="images/original/dropout_381_d5_10iter_10pct.png" width="350"/>
 
 ## License
 
