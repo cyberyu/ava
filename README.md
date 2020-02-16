@@ -39,6 +39,7 @@ We list out two columns, nine rows of histograms visualizing difference of three
 <img src="images/original/dropout_90percent_10iterations.png" width="350"/> <img src="images/original/dropout_90percent_30iterations.png" width="350"  />
 
 ##### Uncertainty and Accuracy Curves by Dropout Ratios 5-class vs 381-class
+The 5-class model is trained using the same dataset mentioned in the main paper, but only using Tier-1 classes. 
 
 Uncertainty and Accuracy curves obtained on 381-class model. <br/>
 <img src="images/original/acc_dropout_10epoch.png" width="250"/>  <img src="images/original/acc_dropout_30epoch.png" width="250" />  <img src="images/original/epoch_compare.png" width="250" />
