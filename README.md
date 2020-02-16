@@ -12,7 +12,7 @@ Welcome!
   - [Histogram of Uncertainties by Dropout Ratios](#histogram-of-uncertainties-by-dropout-ratios)
   - [Uncertainty and Accuracy Curves by Dropout Ratios 5-class vs 381-class](#uncertainty-and-accuracy-curves-by-dropout-ratios-5-class-vs-381-class)
   - [Grid Search for Optimal Threshold on Dropout](#grid-search-for-optimal-threshold-on-dropout)  
-  - [Optimal Threshold Learning on Dropout 381 classes](#optimal-threshold-learning-on-dropout-381-classes)  
+  - [Optimal Threshold Learning on Dropout 381 classes vs 5 classes](#optimal-threshold-learning-on-dropout-381-classes-vs-5-classes)  
 
 - [BERT Model Scripts](#bert-model-scripts)
   
@@ -53,11 +53,7 @@ Uncertainty and Accuracy curves obtained on 5-class model.
 Left side is grid search for 381-class problem.  Right side is grid search for 5-class problem.
 <img src="images/original/bfsearch.png" width="350"/>  <img src="images/original/bfsearch_5class.png" width="350"/>
 
-##### Optimal threshold learning on dropout 381 classes
-
-We did more experiments using different \delta values to optimizing the thresholds from Dropout, and results can be found here.
-
-##### Uncertainty comparison 5-class vs 381-class
+##### Optimal Threshold Learning on Dropout 381 classes vs 5 classes
 
 <img src="images/original/dropout_381_d5_10iter_10pct.png" width="650"/>
 <br/>
