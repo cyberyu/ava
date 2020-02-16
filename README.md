@@ -55,6 +55,8 @@ Left side is grid search for 381-class problem.  Right side is grid search for 5
 
 ##### Optimal Threshold Learning on Dropout 381 classes vs 5 classes
 
+We compared optimal threshold learning results between 381-class and 5-class problem. As shown in the figures below, because of the large amount of constraints in 381-class problem, optimization process is able to learn stable thresholds when only 100 irrelevant samples are involved.  But for 5-class problem, it starts to stablize when 1000 samples are included.  Also, 381-class learning is very time consuming, which needs several hours to 1 day to finish.  5-class problem can be solved efficiently in several minutes.  These give us some insights to build a hierarchical classifier to filter out irrelevant samples using data representing large clusters of intents before classifying them to exact intents. 
+
 <img src="images/original/dropout_381_d5_10iter_10pct.png" width="650"/>
 <br/>
 <img src="images/original/dropout_5_d5_10iter_10pct.png" width="650"/>
