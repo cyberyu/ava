@@ -1,0 +1,8 @@
+# ignore all .a files
+*.zip
+*.data-00000-of-00001
+*.index
+*.meta
+*.pkl
+*.tf_record
+*.pb

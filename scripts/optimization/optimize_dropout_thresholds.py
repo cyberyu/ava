@@ -10,18 +10,22 @@ from random import randint
 import pandas as pd
 from sklearn.metrics import accuracy_score
 
+global CLASS_NO
 
-v_20_train = pickle.load(open('/mnt/amelia_data/381classes/10percent_train.pkl','rb'))
+CLASS_NO=150
+
+
+v_20_train = pickle.load(open('../public_data/train_90percent.pkl','rb'))
 #v_20_test = pickle.load(open('/mnt/amelia_data/381classes/10percent_test.pkl','rb'))
-v_20_negative = pickle.load(open('/mnt/amelia_data/381classes/10percent_negative.pkl','rb'))
+v_20_negative = pickle.load(open('../public_data/negative_90percent.pkl','rb'))
 
 
-df_train = pd.read_csv('/mnt/amelia_data/381classes/train.tsv', delimiter='\t', header=None)
+df_train = pd.read_csv('../public_data/train.tsv', delimiter='\t', header=None)
 df_train.columns = ['Questions','numeric label']
 df_train['numeric label'] = df_train['numeric label'].astype(np.int64)
 tlabel = df_train['numeric label'].values
 
-df_test = pd.read_csv('/mnt/amelia_data/381classes/test.tsv', delimiter='\t', header=None)
+df_test = pd.read_csv('../public_data/test.tsv', delimiter='\t', header=None)
 df_test.columns = ['Questions','numeric label']
 df_test['numeric label'] = df_test['numeric label'].astype(np.int64)
 telabels = df_test['numeric label'].values
@@ -35,7 +39,7 @@ test_variance = np.std(v_20_train,1)
 negative_mean = np.mean(v_20_negative,1)
 negative_variance = np.std(v_20_negative,1)
 
-num_test = 1500  #randomly sample a number of irrelevant questions
+num_test = 500  #randomly sample a number of irrelevant questions
 index_test = random.sample(range(len(tlabel)), num_test)
 
 tlabel = tlabel[index_test]
@@ -48,16 +52,16 @@ index_negative= random.sample(range(len(negative_mean)), num_negative)
 negative_variance=negative_variance[index_negative,:]
 negative_mean=negative_mean[index_negative,:]
 
-alllabels= np.concatenate((tlabel, np.ones(len(negative_mean))*381))
+alllabels= np.concatenate((tlabel, np.ones(len(negative_mean))*CLASS_NO))
 
 mp = np.concatenate((test_mean, negative_mean), axis=0)
 uc = np.concatenate((test_variance, negative_variance), axis=0)
 
 
 # construct the optimization parameters
-l= np.zeros((len(alllabels),382))*0.5
-A= np.zeros((len(mp),382))
-B= np.ones((len(mp),382))*0
+l= np.zeros((len(alllabels),CLASS_NO+1))*0.5
+A= np.zeros((len(mp),CLASS_NO+1))
+B= np.ones((len(mp),CLASS_NO+1))*0
 # E = me
 
 
@@ -66,11 +70,11 @@ B[:,:-1]=uc
 
 for loop in range(len(test_mean)):
     l[loop,int(alllabels[loop])]=1
-    l[loop,381]=0.5
+    l[loop,150]=0.5
 
 # escalation and negative data set have ones on the last column
 for loop in range(len(test_mean), len(alllabels)):
-    l[loop, 381]=1
+    l[loop, 150]=1
     
 #best result
 
@@ -78,7 +82,7 @@ try:
     m = grby.Model("Optimal Threshold Problem")
     
     rowcount = len(A)
-    ncl = 382
+    ncl=151
     
 #     x = m.addVars(rowcount*ncl, vtype=GRB.BINARY, name="x")
     

@@ -30,6 +30,11 @@ flags = tf.flags
 
 FLAGS = flags.FLAGS
 
+global DROP_RATE
+    
+DROP_RATE=0.8
+
+
 ## Required parameters
 flags.DEFINE_string(
     "data_dir", None,
@@ -61,7 +66,7 @@ flags.DEFINE_string(
     "Initial checkpoint (usually from a pre-trained BERT model).")
 
 flags.DEFINE_bool(
-    "do_lower_case", False,
+    "do_lower_case", True,
     "Whether to lower case the input text. Should be True for uncased "
     "models and False for cased models.")
 
@@ -78,12 +83,6 @@ flags.DEFINE_bool("do_eval", False, "Whether to run eval on the dev set.")
 flags.DEFINE_bool(
     "do_predict", False,
     "Whether to run the model in inference mode on the test set.")
-
-flags.DEFINE_bool(
-    "do_predict", False,
-    "Whether to run the model in inference mode on the test set.")
-
-
 
 # Added by Shi Yu, export the model for serving
 
@@ -670,6 +669,8 @@ def _truncate_seq_pair(tokens_a, tokens_b, max_length):
 
 def create_model(bert_config, is_training, input_ids, input_mask, segment_ids,
                  labels, num_labels, use_one_hot_embeddings):
+    
+  global DROP_RATE  
   """Creates a classification model."""
   model = modeling.BertModel(
       config=bert_config,
@@ -696,9 +697,9 @@ def create_model(bert_config, is_training, input_ids, input_mask, segment_ids,
       "output_bias", [num_labels], initializer=tf.zeros_initializer())
 
   with tf.variable_scope("loss"):
-    if is_training:
+    #if is_training:
       # I.e., 0.1 dropout
-      output_layer = tf.nn.dropout(output_layer, keep_prob=0.1)
+    output_layer = tf.nn.dropout(output_layer, keep_prob=1-DROP_RATE)
 
     logits = tf.matmul(output_layer, output_weights, transpose_b=True)
     logits = tf.nn.bias_add(logits, output_bias)

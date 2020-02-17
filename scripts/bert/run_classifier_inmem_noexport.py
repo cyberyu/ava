@@ -30,6 +30,10 @@ flags = tf.flags
 
 FLAGS = flags.FLAGS
 
+global DROP_RATE
+    
+DROP_RATE=0.8
+
 ## Required parameters
 flags.DEFINE_string(
     "data_dir", None,
@@ -409,7 +413,7 @@ class ColaProcessor(DataProcessor):
   def get_labels(self):
     """See base class."""
     #return ["0", "1"]
-    return [str(x) for x in range(381)]
+    return [str(x) for x in range(150)]
 
   def _create_examples(self, lines, set_type):
     """Creates examples for the training and dev sets."""
@@ -685,7 +689,7 @@ def create_model(bert_config, is_training, input_ids, input_mask, segment_ids,
   with tf.variable_scope("loss"):
     #if is_training:
       # I.e., 0.1 dropout
-    output_layer = tf.nn.dropout(output_layer, keep_prob=0.1)
+    output_layer = tf.nn.dropout(output_layer, keep_prob=1-DROP_OUT)
 
     logits = tf.matmul(output_layer, output_weights, transpose_b=True)
     logits = tf.nn.bias_add(logits, output_bias)

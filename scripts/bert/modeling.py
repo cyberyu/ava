@@ -31,6 +31,10 @@ import tensorflow as tf
 class BertConfig(object):
   """Configuration for `BertModel`."""
 
+  global DROP_RATE
+    
+  DROP_RATE=0.8
+
   def __init__(self,
                vocab_size,
                hidden_size=768,
@@ -38,8 +42,8 @@ class BertConfig(object):
                num_attention_heads=12,
                intermediate_size=3072,
                hidden_act="gelu",
-               hidden_dropout_prob=0.9,
-               attention_probs_dropout_prob=0.9,
+               hidden_dropout_prob=DROP_RATE,
+               attention_probs_dropout_prob=DROP_RATE,
                max_position_embeddings=512,
                type_vocab_size=16,
                initializer_range=0.02):
@@ -437,7 +441,7 @@ def embedding_postprocessor(input_tensor,
                             position_embedding_name="position_embeddings",
                             initializer_range=0.02,
                             max_position_embeddings=512,
-                            dropout_prob=0.9):
+                            dropout_prob=DROP_RATE):
   """Performs various post-processing on a word embedding tensor.
 
   Args:
@@ -566,7 +570,7 @@ def attention_layer(from_tensor,
                     query_act=None,
                     key_act=None,
                     value_act=None,
-                    attention_probs_dropout_prob=0.9,
+                    attention_probs_dropout_prob=DROP_RATE,
                     initializer_range=0.02,
                     do_return_2d_tensor=False,
                     batch_size=None,
@@ -761,8 +765,8 @@ def transformer_model(input_tensor,
                       num_attention_heads=12,
                       intermediate_size=3072,
                       intermediate_act_fn=gelu,
-                      hidden_dropout_prob=0.9,
-                      attention_probs_dropout_prob=0.9,
+                      hidden_dropout_prob=DROP_RATE,
+                      attention_probs_dropout_prob=DROP_RATE,
                       initializer_range=0.02,
                       do_return_all_layers=False):
   """Multi-headed, multi-layer Transformer from "Attention is All You Need".
