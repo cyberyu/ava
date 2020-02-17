@@ -66,8 +66,38 @@ We compared optimal threshold learning results between 381-class and 5-class pro
 
 Since we use HuggingFace/Transformer v2.1.1, we use the following script to convert pre-trained Tensorflow based embeddings to Pytorch format.
 
-```python convert_bert_original_tf_checkpoint_to_pytorch.py --tf_checkpoint_path="/mnt/bert_model_serve_sharepoint/bert_model.ckpt" --bert_config_file="/mnt/bert_model_serve_sharepoint/bert_config.json"  --pytorch_dump_path="/mnt/bert_model_serve_sharepoint/pytorch_model_new.bin"
-'''
+```
+python convert_bert_original_tf_checkpoint_to_pytorch.py \ 
+       --tf_checkpoint_path="/mnt/uncased_L-12_H-768_A-12/bert_model.ckpt" \ 
+       --bert_config_file="/mnt/uncased_L-12_H-768_A-12/bert_config.json"  \
+       --pytorch_dump_path="/mnt/uncased_L-12_H-768_A-12/pytorch_model.bin"
+```
+
+New transformer version has a new command transformers-cli (https://huggingface.co/transformers/converting_tensorflow_models.html) to perform the same convert. 
+
+Sentence completion script is at /scripts/sentencompletion/sentence_completion.py. First, initialize the class using
+
+```
+bertlm = bert_lm('/mnt/uncased_L-12_H-768_A-12/')  
+```
+
+and the main function is 
+```
+test(intext, beamsize=10,  voclist=None, rule=None)
+```
+
+Input parameters are:
+
+* intext
+    * The input sentence can be noisy (containing misspelled words) that require auto-correction. As shown in the example, the input sentence has some misspelled words.
+    * Alternatively, it can also be a masked sentence, in the form of “Does it require [MASK] signature for IRA signup”.  [MASK] indicates the word needs to be predicted. In this case, the predicted words will not be matched back to input words.  Every MASKED word will have a separate output of top M predict words.  But the main output of the completed sentence is still one (because it can be combined with misspelled words and cause a large search) .
+    * Alternatively, the sentence can be a complete sentence, which only needs to be evaluated only for Perplexity score.  Notice the score is for the entire sentence.  The lower the score, the more usual the sentence is.
+* Beamsize: This determines how many alternative choices the model needs to explore to complete the sentence. We have three versions of functions, predict\_oov\_v1, predict\_oov\_v2 and predict\_oov\_v3. When there are multiple [MASK] signs in a sentence, and beamsize is larger than 100, v3 function is used as independent correction of multiple OOVs. If beamsize is smaller than 100, v2 is used as joint-probability based correction.  If a sentence has only one [MASK] sign, v1 (Algorithm 2 in Appendix) is used.
+* Customized Vocabulary: The default vocabulary is the encoding vocabulary when the bidirectional language model was trained.  Any words in the sentence that do not occur in vocabulary will be treated as OOV, and will be predicted and matched.   If you want to avoid predicting unwanted words, you can include them in the customized vocabulary.  For multiple words, combine them with “|” and the algorithm will split them into list. It is possible to turn off this customized vocabulary during runtime, which simply just put None in the parameters.
+* Ignore rule: Sometimes we expect the model to ignore a range of words belonging to specific patterns, for example, all words that are capitalized, all words that start with numbers.   They can be specified as ignore rules using regular expressions to skip processing them as OOV words.  For example,  expression "[A-Z]+" tells the model to ignore all uppercase words, so it will not treat `IRA' as an OOV even it is not in the embeddings vocabulary (because the embeddings are lowercased).  To turn this function off, use None as the parameter.
+
+Return values are:
+The model returns two values: the completed sentence, and its perplexity score.
 
 ## License
 

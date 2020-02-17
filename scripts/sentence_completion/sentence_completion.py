@@ -311,6 +311,7 @@ class bert_lm:
         
 global bertlm
 
+
 bertlm = bert_lm('/mnt/bert_model_serve_sharepoint/')
         
 def test(intext, beamsize=10,  voclist=None, rule=None):
