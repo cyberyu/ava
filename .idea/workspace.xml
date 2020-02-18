@@ -36,13 +36,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="1320" />
+          <entry key="md" value="1622" />
           <entry key="py" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="1320" />
+          <entry key="Markdown" value="1622" />
           <entry key="Python" value="7" />
         </counts>
       </usages-collector>
@@ -66,8 +66,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="686">
-                <caret line="75" column="82" selection-start-line="75" selection-start-column="82" selection-end-line="75" selection-end-column="82" />
+              <first_editor relative-caret-position="690">
+                <caret line="81" column="172" selection-start-line="81" selection-start-column="172" selection-end-line="81" selection-end-column="172" />
               </first_editor>
               <second_editor />
             </state>
@@ -279,8 +279,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="686">
-            <caret line="75" column="82" selection-start-line="75" selection-start-column="82" selection-end-line="75" selection-end-column="82" />
+          <first_editor relative-caret-position="690">
+            <caret line="81" column="172" selection-start-line="81" selection-start-column="172" selection-end-line="81" selection-end-column="172" />
           </first_editor>
           <second_editor />
         </state>
