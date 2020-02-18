@@ -99,6 +99,11 @@ Input parameters are:
 Return values are:
 The model returns two values: the completed sentence, and its perplexity score.
 
+
+## RASA scripts for chatbot
+
+
+
 ## License
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)

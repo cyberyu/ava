@@ -1,0 +1,58 @@
+slots:
+  question:
+    type: text
+
+entities:
+- question
+
+intents:
+- greet
+- fine_ask
+- ask_question
+- fine_normal
+- thanks
+- bye
+- answer_positive
+- answer_negative
+
+actions:
+- action_restart
+- action_get_answers
+- utter_greet
+- utter_reply
+- utter_help
+- utter_anything_else
+- utter_ofc
+- utter_bye
+- utter_default
+- utter_confirmation
+- utter_repeat_question
+
+templates:
+  utter_greet:
+    - text: Hey, how are you?
+    - text: Hello, How are you doing?
+  utter_reply:
+    - text: I'm doing great. Please let me know what I can do for you.
+    - text: I'm doing great. Tell me How can I help you today?
+  utter_help:
+    - text: Great. How can I help you?
+    - text: Great. Tell me how can I help you?
+  utter_anything_else:
+    - text: Is there anything else I can help you with?
+    - text: Let me know if there is anything else I can help you with
+  utter_ofc:
+    - text: I can definitely help you. This is the answer I find for you
+    - text: Sure, I can help you. This is the answer I find for you
+  utter_confirmation:
+    - text: Is the answer useful?
+    - text: Is this the correct answer?
+  utter_repeat_question:
+    - text: Oops, please understand that I am still learning. Could you please rephrase your question?
+  utter_bye:
+    - text: Bye and have a nice day
+    - text: Bbye and have a nice day
+  utter_default:
+    - text: I am not sure what you're aiming for
+    - text: I am sorry but I am not able to get you.
+    - text: My appologies but I am not able to get you
