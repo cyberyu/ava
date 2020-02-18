@@ -80,6 +80,17 @@ We followed Denis Antyukhov's blog <a href='https://towardsdatascience.com/pre-t
 
 ##### Bert model training and exporting
 The notebook we use for model training, validation, and exporting is at scripts/notebooks/BERT_PRETRAIN_Ava.ipynb  We use a tweaked version of BERT in all our experiments.  
+
+##### Model Serving API Script
+Exported BERT model can be served using the script in scripts/notebooks/inmemory_intent.ipynb
+
+##### Model Inference with Dropout Sampling
+The complete script for model serving with Monte Carlo Dropout applied on Training, Test, Irrelevant data sets is at scripts/notebooks/dropout_iterate.py.  To change the dropout ratio, you need to change the global variable DROP_RATE in bert/modeling.py, and bert/run_classifier_inmem_noexport.py.
+Also, you need to change the dropout rate in your embeddings' bert_config.json file. 
+
+##### Visualization of Model Accuracy and Uncertainty
+Once you obtained results from the dropout sampling script, using scripts/BERT_dropout_visualization.ipynb to generate the histogram and accuracy curve shown in the main paper. 
+
 ## Sentence Completion Model Scripts
 
 Since we use HuggingFace/Transformer v2.1.1, we use the following script to convert pre-trained Tensorflow based embeddings to Pytorch format.
