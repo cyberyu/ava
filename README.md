@@ -15,6 +15,14 @@ Welcome!
   - [Optimal Threshold Learning on Dropout 381 classes vs 5 classes](#optimal-threshold-learning-on-dropout-381-classes-vs-5-classes)  
 
 - [BERT Model Scripts](#bert-model-scripts)
+  - [Preprocessing of data](#preprocessing-of-data)
+  - [Bert Embeddings Model Pretraining](#bert-embeddings-model-pretraining)
+  - [Bert model training and exporting](#bert-model-training-and-exporting)
+  - [Model Serving API Script](#model-serving-api-script)
+  - [Model Inference with Dropout Sampling](#model-inference-with-dropout-sampling)
+  - [Visualization of Model Accuracy and Uncertainty](#visualization-of-model-accuracy-and-uncertainty)
+  
+   
   
 - [Threshold Optimization Scripts](#threshold-optimization-scripts)
 
@@ -101,6 +109,9 @@ The model returns two values: the completed sentence, and its perplexity score.
 
 
 ## RASA scripts for chatbot
+
+The chatbot project files are under intentbot folder. 
+
 
 
 
