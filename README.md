@@ -238,7 +238,12 @@ Once login, create a bot by filling the profile:
 * import library should be BotFrameworkInput
 * The input channel initialization should use MS App ID and Ms app Password that setup before. 
 * In the credentials.yml, put something as shown in the picture. 
-  <img src="images/msteams/pwd.png" width="550"/> 
+  <img src="images/msteams/pwd.png" width="550"/>
+  
+##### Start the rasa server
+```buildoutcfg
+rasa run --credentials credentials.yml --debug
+```   
 ## License
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
