@@ -132,9 +132,26 @@ The model returns two values: the completed sentence, and its perplexity score.
 ## RASA scripts for chatbot
 
 The chatbot project files are under intentbot folder. 
+In actions.py file, we reuse the function in model serving script and call this in run funciton.
 
 
+```buildoutcfg
+    def run(self, dispatcher, tracker, domain):
+        question = (tracker.latest_message)['text']
+        result = self.predict_inmem(self.session, FLAGS, self.tokenizer, question)
+        label = np.argmax(result)
+        entropy = -np.sum(np.multiply(result, np.log(result)))
+        if entropy <1.5:
+            message = 'Your intent classification is '  + str(self.label2_text[label]) + ' num ' + str(label) +' and Entropy is ' + str(entropy)
+        else:
+            message = 'Sorry I do not know the answer. Entropy is '+ str(entropy)
+        dispatcher.utter_message(message)
+```
 
+To start this endpoint, run this command in terminal:
+```buildoutcfg
+python -m rasa_sdk.endpoint --actions actions
+```
 
 ## License
 
