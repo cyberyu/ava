@@ -28,7 +28,7 @@ Welcome!
 - [RASA scripts for chatbot](#rasa-scripts-for-chatbot)
 - [Microsoft Teams Setup](#microsoft-teams-setup)
   - [Create a bot for MS Teams](#create-a-bot-for-ms-teams)
-  - [Change at RASA dialogue_model and credentials](#change-at-rasa-dialogue-model-and-credentials)
+  - [Change at RASA dialogue_model and credentials](#change-at-rasa-dialogue_model-and-credentials)
   - [Start the rasa server](#start-the-rasa-server)
 - [License](#license)
 - [Contributors](#contributors)
