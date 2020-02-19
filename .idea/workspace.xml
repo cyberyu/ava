@@ -36,14 +36,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="3354" />
+          <entry key="md" value="3356" />
           <entry key="py" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="BuildoutCfg" value="2" />
-          <entry key="Markdown" value="3352" />
+          <entry key="Markdown" value="3354" />
           <entry key="Python" value="14" />
         </counts>
       </usages-collector>
@@ -68,7 +68,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="680">
-                <caret line="222" column="2" selection-start-line="222" selection-start-column="2" selection-end-line="222" selection-end-column="2" />
+                <caret line="222" column="49" selection-start-line="222" selection-start-column="49" selection-end-line="222" selection-end-column="49" />
               </first_editor>
               <second_editor />
             </state>
@@ -165,6 +165,11 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/msteams" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -301,7 +306,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="680">
-            <caret line="222" column="2" selection-start-line="222" selection-start-column="2" selection-end-line="222" selection-end-column="2" />
+            <caret line="222" column="49" selection-start-line="222" selection-start-column="49" selection-end-line="222" selection-end-column="49" />
           </first_editor>
           <second_editor />
         </state>
