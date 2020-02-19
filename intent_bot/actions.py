@@ -102,20 +102,6 @@ class ActionGetAnswers(Action):
     def run(self, dispatcher, tracker, domain):
         question = (tracker.latest_message)['text']
 
-
-
-        # print(question)
-        # response = requests.post("https://domino.opse.c1.vanguard.com/v1/UTUZ/Ava_chatbot/endpoint",
-        #     headers = {
-        #         "X-Domino-Api-Key": "PBfRAGsouMCedZIBy4URyg5Syf6JxpYbRqmXaL1OpwDR0T4qEcXxs1kC2qxfFUL9",
-        #         "Content-Type": "application/json"
-        #     }, verify=False,
-        #     json = {
-        #         "parameters": [question]
-        #     }
-        # )
-        # re = response.json()
-        # result = re['result']['predictions']
         result = self.predict_inmem(self.session, FLAGS, self.tokenizer, question)
 
         label = np.argmax(result)
