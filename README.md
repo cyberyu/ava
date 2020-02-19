@@ -227,6 +227,8 @@ Once login, create a bot by filling the profile:
 * Click on "Certificates and secretes" to new a client secrete to generate a app password (only can be shown once).
  <img src="images/msteams/cert.png" width="550"/>
   
+* Click on "Mainfest" and check the last 3 lines.  "signInAudience" needs to be "AzureADandPersonalMicrosoftAccount" if the previous account is selected correctly.  If this is wrong, you need to recreate a Bot because this is not easily to be changed.
+ <img src="images/msteams/mainfest.png" width="550"/>   
 ## License
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
