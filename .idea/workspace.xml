@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bba81da-3995-4359-94fe-f38458471e86" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/notebooks/decision_threshold_acc.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/notebooks/decision_threshold_acc.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,20 +20,20 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="ipynb" value="5" />
+          <entry key="ipynb" value="8" />
           <entry key="md" value="2" />
           <entry key="png" value="1" />
-          <entry key="py" value="6" />
+          <entry key="py" value="7" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="IPNB" value="5" />
+          <entry key="IPNB" value="8" />
           <entry key="Image" value="1" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="6" />
+          <entry key="Python" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -65,7 +65,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -73,6 +73,44 @@
                 <caret line="244" column="46" selection-start-line="244" selection-start-column="46" selection-end-line="244" selection-end-column="46" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/notebooks/BERT_PRETRAIN_Ava.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/notebooks/decision_threshold_acc.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/notebooks/dropout_iterate.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/notebooks/inmemory_intent.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="0" />
             </state>
           </provider>
         </entry>
@@ -125,6 +163,7 @@
         <option value="$PROJECT_DIR$/intent_bot/actions.py" />
         <option value="$PROJECT_DIR$/intent_bot/dialogue_model.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/scripts/notebooks/decision_threshold_acc.ipynb" />
       </list>
     </option>
   </component>
@@ -161,7 +200,13 @@
             <path>
               <item name="ava" type="b2602c69:ProjectViewProjectNode" />
               <item name="ava" type="462c0819:PsiDirectoryNode" />
-              <item name="intent_bot" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ava" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="notebooks" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -237,21 +282,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/notebooks/BERT_PRETRAIN_Ava.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/optimization/entropy_threshold.py" />
-    <entry file="file://$PROJECT_DIR$/scripts/notebooks/inmemory_intent.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/optimization/optimize_dropout_thresholds.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="719">
@@ -319,6 +350,36 @@
             <caret line="244" column="46" selection-start-line="244" selection-start-column="46" selection-end-line="244" selection-end-column="46" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/notebooks/BERT_PRETRAIN_Ava.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/notebooks/decision_threshold_acc.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/notebooks/dropout_iterate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/notebooks/inmemory_intent.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
         </state>
       </provider>
     </entry>
