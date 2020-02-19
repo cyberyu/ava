@@ -22,12 +22,14 @@ Welcome!
   - [Model Inference with Dropout Sampling](#model-inference-with-dropout-sampling)
   - [Visualization of Model Accuracy and Uncertainty](#visualization-of-model-accuracy-and-uncertainty)
   
-   
-  
 - [Threshold Optimization Scripts](#threshold-optimization-scripts)
 
 - [Sentence Completion Model Scripts](#sentence-completion-model-scripts)
 - [RASA scripts for chatbot](#rasa-scripts-for-chatbot)
+- [Microsoft Teams Setup](#microsoft-teams-setup)
+  - [Create a bot for MS Teams](#create-a-bot-for-ms-teams)
+  - [Change at RASA dialogue_model.py and credentials.py](#change-at-rasa-dialogue-model.py-and-credentials.py)
+  - [Start the rasa server](#start-the-rasa-server)
 - [License](#license)
 - [Contributors](#contributors)
 
@@ -194,9 +196,32 @@ def run_core(core_model_path, nlu_model_path, action_endpoint_url):
         for response in responses:
             print(response["text"])
     return agent
+    
+if __name__ == '__main__':
+    actionConfig = utils.read_yaml_file('endpoints.yml')
+    slackConfig = utils.read_yaml_file('credentials.yml')
+    train_core('domain.yml', './models/dialogue', './data/stories.md', 'policy.yml')
+    run_core('./models/dialogue', './models/current/nlu',
+             actionConfig["action_endpoint"]["url"])
+    
 
 ```
 
+To let RASA communicate to the bot frond-end deployed on MS Teams, we need to import BotFrameworkInput from rasa_core.channels. Also, when initialize BotFrameworkInput channel,
+we need to provide app_id and app_password, which are confiugred during Botframework and Azure Directory setup.
+
+To host this dialogue model, run the following command in terminal:
+```buildoutcfg
+rasa shell
+``` 
+
+## Microsoft Teams Setup
+##### Create a bot for MS Teams
+Create the bot using this link: https://dev.botframework.com/bots/new. ld be able to login. 
+Once login, create a bot by filling the profile:
+* Message Endpoint: this needs to be RASA endpoint, since I use ngrok on my home computer running RASA server, ngrok mapped my RASA localhost:5005 to that unique URL.    For botframework connection, one has to specify  botframework/webhook 
+  <img src="images/msteams/endpoint.png" width="350"/>
+  
 ## License
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)

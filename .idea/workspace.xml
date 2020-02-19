@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3bba81da-3995-4359-94fe-f38458471e86" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intent_bot/dialogue_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/intent_bot/dialogue_model.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,13 +36,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="2744" />
+          <entry key="md" value="3354" />
           <entry key="py" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="2744" />
+          <entry key="BuildoutCfg" value="2" />
+          <entry key="Markdown" value="3352" />
           <entry key="Python" value="14" />
         </counts>
       </usages-collector>
@@ -67,8 +67,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="804">
-                <caret line="196" lean-forward="true" selection-start-line="196" selection-end-line="196" />
+              <first_editor relative-caret-position="680">
+                <caret line="222" column="2" selection-start-line="222" selection-start-column="2" selection-end-line="222" selection-end-column="2" />
               </first_editor>
               <second_editor />
             </state>
@@ -78,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/intent_bot/dialogue_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" lean-forward="true" selection-end-line="39" />
+            <state relative-caret-position="615">
+              <caret line="41" selection-start-line="41" selection-end-line="47" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -139,6 +139,17 @@
             <path>
               <item name="ava" type="b2602c69:ProjectViewProjectNode" />
               <item name="ava" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ava" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ava" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="msteams" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ava" type="b2602c69:ProjectViewProjectNode" />
@@ -259,13 +270,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/intent_bot/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/intent_bot/actions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="516">
@@ -278,19 +282,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/intent_bot/dialogue_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" lean-forward="true" selection-end-line="39" />
+        <state relative-caret-position="615">
+          <caret line="41" selection-start-line="41" selection-end-line="47" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/intent_bot/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="804">
-            <caret line="196" lean-forward="true" selection-start-line="196" selection-end-line="196" />
+          <first_editor relative-caret-position="680">
+            <caret line="222" column="2" selection-start-line="222" selection-start-column="2" selection-end-line="222" selection-end-column="2" />
           </first_editor>
           <second_editor />
         </state>
