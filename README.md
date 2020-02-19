@@ -225,10 +225,20 @@ Once login, create a bot by filling the profile:
 * Click on "Manage Microsoft App ID and password" to register this bot on Azure.  The Application ID is the App ID to be registered in RASA credentials.yml file.
 * When registering, make sure to select account type as "Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)", this is very important, if this is not setup correctly, MS Teams bot will not be able to talk to RASA.
 * Click on "Certificates and secretes" to new a client secrete to generate a app password (only can be shown once).
- <img src="images/msteams/cert.png" width="550"/>
+  <img src="images/msteams/cert.png" width="550"/>
   
 * Click on "Mainfest" and check the last 3 lines.  "signInAudience" needs to be "AzureADandPersonalMicrosoftAccount" if the previous account is selected correctly.  If this is wrong, you need to recreate a Bot because this is not easily to be changed.
- <img src="images/msteams/mainfest.png" width="550"/>   
+  <img src="images/msteams/mainfest.png" width="550"/>
+  
+* Under "API Permission", click Grant admin consent for xxxx
+* Back to the Bot Dev framework page, add MS teams as channel
+  <img src="images/msteams/channel.png" width="550"/>
+   
+##### Change at RASA dialogue_model.py and credentials.py
+* import library should be BotFrameworkInput
+* The input channel initialization should use MS App ID and Ms app Password that setup before. 
+* In the credentials.yml, put something as shown in the picture. 
+  <img src="images/msteams/pwd.png" width="550"/> 
 ## License
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
