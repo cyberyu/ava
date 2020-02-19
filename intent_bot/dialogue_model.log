@@ -1,0 +1,159 @@
+INFO:numexpr.utils:NumExpr defaulting to 8 threads.
+DEBUG:rasa_core.training.generator:Generated trackers will be deduplicated based on their unique last 3 states.
+DEBUG:rasa_core.training.generator:Number of augmentation rounds is 3
+DEBUG:rasa_core.training.generator:Starting data generation round 0 ... (with 1 trackers)
+DEBUG:rasa_core.training.generator:Finished phase (9 training samples found).
+DEBUG:rasa_core.training.generator:Data generation rounds finished.
+DEBUG:rasa_core.training.generator:Found 0 unused checkpoints
+DEBUG:rasa_core.training.generator:Starting augmentation round 0 ... (with 9 trackers)
+DEBUG:rasa_core.training.generator:Finished phase (90 training samples found).
+DEBUG:rasa_core.training.generator:Starting augmentation round 1 ... (with 20 trackers)
+DEBUG:rasa_core.training.generator:Finished phase (227 training samples found).
+DEBUG:rasa_core.training.generator:Starting augmentation round 2 ... (with 20 trackers)
+DEBUG:rasa_core.training.generator:Finished phase (364 training samples found).
+DEBUG:rasa_core.training.generator:Found 364 training trackers.
+DEBUG:rasa_core.training.generator:Subsampled to 200 augmented training trackers.
+DEBUG:rasa_core.training.generator:There are 9 original trackers.
+DEBUG:rasa_core.agent:Agent trainer got kwargs: {}
+DEBUG:rasa_core.featurizers:Creating states and action examples from collected trackers (by MaxHistoryTrackerFeaturizer(BinarySingleStateFeaturizer))...
+DEBUG:rasa_core.featurizers:Created 199 action examples.
+WARNING:tensorflow:From /Users/shiyu/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /Users/shiyu/anaconda3/lib/python3.6/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+DEBUG:rasa_core.policies.keras_policy:None
+INFO:rasa_core.policies.keras_policy:Fitting model with 199 total samples and a validation split of 0.1
+DEBUG:rasa_core.policies.policy:Parameters ignored by `model.fit(...)`: {}
+WARNING:tensorflow:From /Users/shiyu/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+INFO:rasa_core.policies.keras_policy:Done fitting keras policy model
+DEBUG:rasa_core.featurizers:Creating states and action examples from collected trackers (by MaxHistoryTrackerFeaturizer(SingleStateFeaturizer))...
+DEBUG:rasa_core.featurizers:Created 20 action examples.
+DEBUG:rasa_core.policies.memoization:Memorized 20 unique examples.
+DEBUG:rasa_core.featurizers:Creating states and action examples from collected trackers (by MaxHistoryTrackerFeaturizer(SingleStateFeaturizer))...
+DEBUG:rasa_core.featurizers:Created 20 action examples.
+DEBUG:rasa_core.policies.memoization:Memorized 0 unique examples.
+INFO:rasa_core.agent:Persisted model to '/Users/shiyu/Documents/Project/Amelia/kdd_paper/intent_bot/models/dialogue'
+INFO:numexpr.utils:NumExpr defaulting to 8 threads.
+DEBUG:rasa_core.training.generator:Generated trackers will be deduplicated based on their unique last 3 states.
+DEBUG:rasa_core.training.generator:Number of augmentation rounds is 3
+DEBUG:rasa_core.training.generator:Starting data generation round 0 ... (with 1 trackers)
+DEBUG:rasa_core.training.generator:Finished phase (9 training samples found).
+DEBUG:rasa_core.training.generator:Data generation rounds finished.
+DEBUG:rasa_core.training.generator:Found 0 unused checkpoints
+DEBUG:rasa_core.training.generator:Starting augmentation round 0 ... (with 9 trackers)
+DEBUG:rasa_core.training.generator:Finished phase (90 training samples found).
+DEBUG:rasa_core.training.generator:Starting augmentation round 1 ... (with 20 trackers)
+DEBUG:rasa_core.training.generator:Finished phase (227 training samples found).
+DEBUG:rasa_core.training.generator:Starting augmentation round 2 ... (with 20 trackers)
+DEBUG:rasa_core.training.generator:Finished phase (364 training samples found).
+DEBUG:rasa_core.training.generator:Found 364 training trackers.
+DEBUG:rasa_core.training.generator:Subsampled to 200 augmented training trackers.
+DEBUG:rasa_core.training.generator:There are 9 original trackers.
+DEBUG:rasa_core.agent:Agent trainer got kwargs: {}
+DEBUG:rasa_core.featurizers:Creating states and action examples from collected trackers (by MaxHistoryTrackerFeaturizer(BinarySingleStateFeaturizer))...
+DEBUG:rasa_core.featurizers:Created 199 action examples.
+WARNING:tensorflow:From /Users/shiyu/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /Users/shiyu/anaconda3/lib/python3.6/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+DEBUG:rasa_core.policies.keras_policy:None
+INFO:rasa_core.policies.keras_policy:Fitting model with 199 total samples and a validation split of 0.1
+DEBUG:rasa_core.policies.policy:Parameters ignored by `model.fit(...)`: {}
+WARNING:tensorflow:From /Users/shiyu/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+INFO:rasa_core.policies.keras_policy:Done fitting keras policy model
+DEBUG:rasa_core.featurizers:Creating states and action examples from collected trackers (by MaxHistoryTrackerFeaturizer(SingleStateFeaturizer))...
+DEBUG:rasa_core.featurizers:Created 20 action examples.
+DEBUG:rasa_core.policies.memoization:Memorized 20 unique examples.
+DEBUG:rasa_core.featurizers:Creating states and action examples from collected trackers (by MaxHistoryTrackerFeaturizer(SingleStateFeaturizer))...
+DEBUG:rasa_core.featurizers:Created 20 action examples.
+DEBUG:rasa_core.policies.memoization:Memorized 0 unique examples.
+INFO:rasa_core.agent:Model directory ./models/dialogue exists and contains old model files. All files will be overwritten.
+INFO:rasa_core.agent:Persisted model to '/Users/shiyu/Documents/Project/Amelia/kdd_paper/intent_bot/models/dialogue'
+INFO:numexpr.utils:NumExpr defaulting to 8 threads.
+DEBUG:rasa_core.training.generator:Generated trackers will be deduplicated based on their unique last 3 states.
+DEBUG:rasa_core.training.generator:Number of augmentation rounds is 3
+DEBUG:rasa_core.training.generator:Starting data generation round 0 ... (with 1 trackers)
+DEBUG:rasa_core.training.generator:Finished phase (9 training samples found).
+DEBUG:rasa_core.training.generator:Data generation rounds finished.
+DEBUG:rasa_core.training.generator:Found 0 unused checkpoints
+DEBUG:rasa_core.training.generator:Starting augmentation round 0 ... (with 9 trackers)
+DEBUG:rasa_core.training.generator:Finished phase (90 training samples found).
+DEBUG:rasa_core.training.generator:Starting augmentation round 1 ... (with 20 trackers)
+DEBUG:rasa_core.training.generator:Finished phase (227 training samples found).
+DEBUG:rasa_core.training.generator:Starting augmentation round 2 ... (with 20 trackers)
+DEBUG:rasa_core.training.generator:Finished phase (364 training samples found).
+DEBUG:rasa_core.training.generator:Found 364 training trackers.
+DEBUG:rasa_core.training.generator:Subsampled to 200 augmented training trackers.
+DEBUG:rasa_core.training.generator:There are 9 original trackers.
+DEBUG:rasa_core.agent:Agent trainer got kwargs: {}
+DEBUG:rasa_core.featurizers:Creating states and action examples from collected trackers (by MaxHistoryTrackerFeaturizer(BinarySingleStateFeaturizer))...
+DEBUG:rasa_core.featurizers:Created 199 action examples.
+WARNING:tensorflow:From /Users/shiyu/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /Users/shiyu/anaconda3/lib/python3.6/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+DEBUG:rasa_core.policies.keras_policy:None
+INFO:rasa_core.policies.keras_policy:Fitting model with 199 total samples and a validation split of 0.1
+DEBUG:rasa_core.policies.policy:Parameters ignored by `model.fit(...)`: {}
+WARNING:tensorflow:From /Users/shiyu/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+INFO:rasa_core.policies.keras_policy:Done fitting keras policy model
+DEBUG:rasa_core.featurizers:Creating states and action examples from collected trackers (by MaxHistoryTrackerFeaturizer(SingleStateFeaturizer))...
+DEBUG:rasa_core.featurizers:Created 20 action examples.
+DEBUG:rasa_core.policies.memoization:Memorized 20 unique examples.
+DEBUG:rasa_core.featurizers:Creating states and action examples from collected trackers (by MaxHistoryTrackerFeaturizer(SingleStateFeaturizer))...
+DEBUG:rasa_core.featurizers:Created 20 action examples.
+DEBUG:rasa_core.policies.memoization:Memorized 0 unique examples.
+INFO:rasa_core.agent:Model directory ./models/dialogue exists and contains old model files. All files will be overwritten.
+INFO:rasa_core.agent:Persisted model to '/Users/shiyu/Documents/Project/Amelia/kdd_paper/intent_bot/models/dialogue'
+INFO:numexpr.utils:NumExpr defaulting to 8 threads.
+DEBUG:rasa_core.training.generator:Generated trackers will be deduplicated based on their unique last 3 states.
+DEBUG:rasa_core.training.generator:Number of augmentation rounds is 3
+DEBUG:rasa_core.training.generator:Starting data generation round 0 ... (with 1 trackers)
+DEBUG:rasa_core.training.generator:Finished phase (9 training samples found).
+DEBUG:rasa_core.training.generator:Data generation rounds finished.
+DEBUG:rasa_core.training.generator:Found 0 unused checkpoints
+DEBUG:rasa_core.training.generator:Starting augmentation round 0 ... (with 9 trackers)
+DEBUG:rasa_core.training.generator:Finished phase (90 training samples found).
+DEBUG:rasa_core.training.generator:Starting augmentation round 1 ... (with 20 trackers)
+DEBUG:rasa_core.training.generator:Finished phase (227 training samples found).
+DEBUG:rasa_core.training.generator:Starting augmentation round 2 ... (with 20 trackers)
+DEBUG:rasa_core.training.generator:Finished phase (364 training samples found).
+DEBUG:rasa_core.training.generator:Found 364 training trackers.
+DEBUG:rasa_core.training.generator:Subsampled to 200 augmented training trackers.
+DEBUG:rasa_core.training.generator:There are 9 original trackers.
+DEBUG:rasa_core.agent:Agent trainer got kwargs: {}
+DEBUG:rasa_core.featurizers:Creating states and action examples from collected trackers (by MaxHistoryTrackerFeaturizer(BinarySingleStateFeaturizer))...
+DEBUG:rasa_core.featurizers:Created 199 action examples.
+WARNING:tensorflow:From /Users/shiyu/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /Users/shiyu/anaconda3/lib/python3.6/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+DEBUG:rasa_core.policies.keras_policy:None
+INFO:rasa_core.policies.keras_policy:Fitting model with 199 total samples and a validation split of 0.1
+DEBUG:rasa_core.policies.policy:Parameters ignored by `model.fit(...)`: {}
+WARNING:tensorflow:From /Users/shiyu/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+INFO:rasa_core.policies.keras_policy:Done fitting keras policy model
+DEBUG:rasa_core.featurizers:Creating states and action examples from collected trackers (by MaxHistoryTrackerFeaturizer(SingleStateFeaturizer))...
+DEBUG:rasa_core.featurizers:Created 20 action examples.
+DEBUG:rasa_core.policies.memoization:Memorized 20 unique examples.
+DEBUG:rasa_core.featurizers:Creating states and action examples from collected trackers (by MaxHistoryTrackerFeaturizer(SingleStateFeaturizer))...
+DEBUG:rasa_core.featurizers:Created 20 action examples.
+DEBUG:rasa_core.policies.memoization:Memorized 0 unique examples.
+INFO:rasa_core.agent:Model directory ./models/dialogue exists and contains old model files. All files will be overwritten.
+INFO:rasa_core.agent:Persisted model to '/Users/shiyu/Documents/Project/Amelia/kdd_paper/intent_bot/models/dialogue'

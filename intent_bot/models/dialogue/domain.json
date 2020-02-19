@@ -1,0 +1,32 @@
+{
+  "states": [
+    "intent_answer_negative",
+    "intent_answer_positive",
+    "intent_ask_question",
+    "intent_bye",
+    "intent_fine_ask",
+    "intent_fine_normal",
+    "intent_greet",
+    "intent_thanks",
+    "entity_question",
+    "slot_question_0",
+    "prev_action_listen",
+    "prev_action_restart",
+    "prev_action_default_fallback",
+    "prev_action_deactivate_form",
+    "prev_action_revert_fallback_events",
+    "prev_action_default_ask_affirmation",
+    "prev_action_default_ask_rephrase",
+    "prev_action_back",
+    "prev_action_get_answers",
+    "prev_utter_greet",
+    "prev_utter_reply",
+    "prev_utter_help",
+    "prev_utter_anything_else",
+    "prev_utter_ofc",
+    "prev_utter_bye",
+    "prev_utter_default",
+    "prev_utter_confirmation",
+    "prev_utter_repeat_question"
+  ]
+}
