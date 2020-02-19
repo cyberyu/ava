@@ -2,10 +2,10 @@ import logging
 from rasa_core import config
 from rasa_core import utils
 from rasa_core.channels.botframework import BotFrameworkInput
-#from rasa_core.channels.slack import SlackInput
 from rasa_core.agent import Agent
 from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.utils import EndpointConfig
+#from rasa_core.channels.slack import SlackInput
 
 
 logfile = 'dialogue_model.log'
@@ -25,7 +25,6 @@ def run_core(core_model_path, nlu_model_path, action_endpoint_url):
     nlu_interpreter = RasaNLUInterpreter(nlu_model_path)
     action_endpoint = EndpointConfig(url=action_endpoint_url)
     agent = Agent.load(core_model_path, interpreter=nlu_interpreter, action_endpoint=action_endpoint)
-    #input_channel = SlackInput(slack_token)
     input_channel = BotFrameworkInput(app_id='c79b9ea3-dab6-4089-8179-b323aff4d662', app_password='YLs33Y=0[/r8b:X@03HBA8.Pi4ziWA1]')
     agent.handle_channels([input_channel], 5005, serve_forever=True)
 
