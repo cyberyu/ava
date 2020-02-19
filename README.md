@@ -220,7 +220,7 @@ rasa shell
 Create the bot using this link: https://dev.botframework.com/bots/new. ld be able to login. 
 Once login, create a bot by filling the profile:
 * Message Endpoint: this needs to be RASA endpoint, since I use ngrok on my home computer running RASA server, ngrok mapped my RASA localhost:5005 to that unique URL.    For botframework connection, one has to specify  botframework/webhook 
-  <img src="images/msteams/endpoint.png"/>
+  <img src="images/msteams/endpoint.png" width="350"/>
   
 ## License
 
