@@ -225,7 +225,7 @@ Once login, create a bot by filling the profile:
 * Click on "Manage Microsoft App ID and password" to register this bot on Azure.  The Application ID is the App ID to be registered in RASA credentials.yml file.
 * When registering, make sure to select account type as "Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)", this is very important, if this is not setup correctly, MS Teams bot will not be able to talk to RASA.
 * Click on "Certificates and secretes" to new a client secrete to generate a app password (only can be shown once).
- <img src="images/msteams/cert.png" width="350"/>
+ <img src="images/msteams/cert.png" width="550"/>
   
 ## License
 
