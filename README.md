@@ -219,8 +219,13 @@ rasa shell
 ##### Create a bot for MS Teams
 Create the bot using this link: https://dev.botframework.com/bots/new. ld be able to login. 
 Once login, create a bot by filling the profile:
-* Message Endpoint: this needs to be RASA endpoint, since I use ngrok on my home computer running RASA server, ngrok mapped my RASA localhost:5005 to that unique URL.    For botframework connection, one has to specify  botframework/webhook 
+* Message Endpoint: this needs to be RASA endpoint, since I use ngrok on my home computer running RASA server, ngrok mapped my RASA localhost:5005 to that unique URL.    For botframework connection, one has to specify  botframework/webhook <br/> 
   <img src="images/msteams/endpoint.png" width="350"/>
+
+* Click on "Manage Microsoft App ID and password" to register this bot on Azure.  The Application ID is the App ID to be registered in RASA credentials.yml file.
+* When registering, make sure to select account type as "Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)", this is very important, if this is not setup correctly, MS Teams bot will not be able to talk to RASA.
+* Click on "Certificates and secretes" to new a client secrete to generate a app password (only can be shown once).
+
   
 ## License
 
