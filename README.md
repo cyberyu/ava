@@ -28,7 +28,7 @@ Welcome!
 - [RASA scripts for chatbot](#rasa-scripts-for-chatbot)
 - [Microsoft Teams Setup](#microsoft-teams-setup)
   - [Create a bot for MS Teams](#create-a-bot-for-ms-teams)
-  - [Change at RASA dialogue_model.py and credentials.py](#change-at-rasa-dialogue-model.py-and-credentials.py)
+  - [Change at RASA dialogue_model and credentials](#change-at-rasa-dialogue-model-and-credentials)
   - [Start the rasa server](#start-the-rasa-server)
 - [License](#license)
 - [Contributors](#contributors)
@@ -234,7 +234,7 @@ Once login, create a bot by filling the profile:
 * Back to the Bot Dev framework page, add MS teams as channel
   <img src="images/msteams/channel.png" width="550"/>
    
-##### Change at RASA dialogue_model.py and credentials.py
+##### Change at RASA dialogue_model and credentials
 * import library should be BotFrameworkInput
 * The input channel initialization should use MS App ID and Ms app Password that setup before. 
 * In the credentials.yml, put something as shown in the picture. 
