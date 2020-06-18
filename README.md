@@ -75,7 +75,7 @@ We compared optimal threshold learning results between 381-class and 5-class pro
 ##### Preprocessing of data
 To protect proprietary intellectual property, we cannot share the original data set we used in the main paper. Here, we use a public data set from Larson et al., An Evaluation Dataset for Intent Classification and Out-of-Scope Prediction, EMNLP-IJCNLP 2019.
 The complete data set can be download at https://github.com/clinc/oos-eval
-The preprocessing jupyter notebook is at alternative_data/data_preprocessing.ipynb. This notebook assumes 
+The preprocessing jupyter notebook is at alternative_data/data_preprocessing.ipynb. This notebook assumes these dataset are inplace. 
 
 ##### Bert Embeddings Model Pretraining
 We followed Denis Antyukhov's blog <a href='https://towardsdatascience.com/pre-training-bert-from-scratch-with-cloud-tpu-6e2f71028379'>Pre-training BERT from scratch with cloud TPU</a>. The jupyter notebook is at scripts/notebooks/BERT_PRETRAIN_Ava.ipynb 
