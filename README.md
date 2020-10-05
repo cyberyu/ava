@@ -2,7 +2,7 @@
 ---
 
 
-## Project repo for "Yu et al., AVA: A Financial Service Chatbot based on Deep BidirectionalTransformer, submitted for peer review" 
+## Project repo for "AVA: A Financial Service Chatbot based on Deep BidirectionalTransformer, submitted for peer review" 
 
 Welcome!
 
